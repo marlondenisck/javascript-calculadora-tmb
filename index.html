@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Calorias para seu corpo ideal 💪🏋️‍♀️🚴‍♀️</title>
+  <link href="./styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Calculadora de T.M.B. 💪🏋️‍♀️🚴‍♀️</h2>
+    </header>
+
+    <div class="content">
+      <form id="form">
+        <div class="form-group">
+          <label for="gender">Seu sexo</label>
+          <select id="gender">
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="age">Sua idade</label>
+          <input type="number" id="age" />
+        </div>
+        <div class="form-group">
+          <label for="weight">Seu peso</label>
+          <input type="number" id="weight" />
+        </div>
+        <div class="form-group">
+          <label for="height">Sua altura</label>
+          <input type="number" id="height" />
+        </div>
+        <div class="form-group">
+          <label for="activity_level">Seu nível de atividade física</label>
+          <select id="activity_level">
+            <option value="1.2">Sedentário (Sem atividades)</option>
+            <option value="1.375">Pouca atividade (1 a 3 dias por semana)</option>
+            <option value="1.55">Atividade moderada (3 a 5 dias por semana)</option>
+            <option value="1.725">Atividade intensa (6 a 7 dias por semana)</option>
+            <option value="1.9">Atividade muito intensa (Todos os dias por mais de 1hr)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Calcular!</button>
+        </div>
+      </form>
+      <div class="result-container" id="result"></div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
